@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predictions</title>
+    <link href="/static/prediction_view.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <img src="/static/man_question.png", class="background">
+    <h1>Recommendation system</h1>
+        <h2>Only one click to know what you want</h2>
+            <h3>
+                <p>Just insert visitor ID and you will get item recommendation for this visitor.</p>
+                <p> Note that visitor ID must be integer! </p>
+                <p>Then press the button under the form. For more details click <a href="/about">here.</a> </p>
+            </h3>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <form class="rec_forms" id="predict", method="POST">
+        <label name="features">Visitor ID:</label><input type="text" name="userid" value="Integer">
+        <br>
+        <button type="submit">Get recommendation</button>
+    </form>
+
+    <footer>
+        <p align="center"><a href="https://github.com/GorRatsy/"
+               target="_blank">Made by Egor Ratushnuk</a></p>
+        <p align="center"><a target="_blank">2023</a></p>
+    </footer>
+</body>
+</body>
+</html>

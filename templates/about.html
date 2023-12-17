@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+</head>
+<body>
+    <h1>How to use this web-server</h1>
+    <h2>1. Which kind of data you have to use</h2>
+        <p>The main part of this project is data. For building correct recommendation using KNNWithMeans-algorithm from
+        Surprise library that became a basement of demonstrated system you need next data:</p>
+        <p> - visitors' (users') IDs</p>
+        <p> - items' (products') IDs</p>
+        <p> - data about their interaction, for example, rating for items from each user</p>
+
+    <h2>2. Dataset transformation</h2>
+        <p>To make relevant to systems's requeremnts dataset you have to group all interactions' marks by items and appropriate users</p>
+
+    <h2>3. Model</h2>
+        <p>As it was noticed the basement of this recommend system is KNNWithMeans-algorithm form Surprise-library</p>
+        <p>If you want to read more visit this <a href="https://surprise.readthedocs.io/en/stable/knn_inspired.html#surprise.prediction_algorithms.knns.KNNWithMeans">page</a> </p>
+        <h3>Model has next parameters</h3>
+        <p> - k (int) – The (max) number of neighbors to take into account for aggregation (see this note). Default is 40.</p>
+        <p> - min_k (int) – The minimum number of neighbors to take into account for aggregation. If there are not enough neighbors, the neighbor aggregation is set to zero (so the prediction ends up being equivalent to the mean
+ or ). Default is 1.</p>
+        <p> - sim_options (dict) – A dictionary of options for the similarity measure. See Similarity measure configuration for accepted options.</p>
+        <p> - verbose (bool) – Whether to print trace messages of bias estimation, similarity, etc. Default is True.</p>
+        </br>
+        <p>For building system was used next parameters</p>
+        <p>sim_options = {
+    'name' : 'cosine',
+    'user_based' : True
+        }, k is default 40, min_k is default too</p>
+        </br>
+        <p>The best metric precision at 3 of using model is 0.42</p>
+
+    <h2>4. Docker-image</h2>
+        <p>To set docker-image at your desktop insert next commands</p>
+</body>
+</html>
