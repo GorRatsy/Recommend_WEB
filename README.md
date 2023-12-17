@@ -1,3 +1,5 @@
+![image](https://github.com/GorRatsy/Recommend_WEB/assets/93947333/84dae6f1-adab-492e-9978-142fbbeec6c6)
+
 # Recommendation web-service
 The main goal of this project was to create web-servie that will allow to make prediction for each user from the database.
 Database contains information about users' activity and desription about all products.
